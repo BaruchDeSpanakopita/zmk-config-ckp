@@ -7,7 +7,6 @@
 
 #define DEFAULT 0
 #define RAISE   1
-#define MODIF	2
 
 / {
 	macros {
