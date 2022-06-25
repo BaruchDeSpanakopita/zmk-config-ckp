@@ -41,7 +41,6 @@
 				&kp LSHFT &none &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH   &kp RSHFT &kp UP &layer_two
 				&kp LCTRL &kp LGUI &kp LALT            &kp SPACE                          &kp RALT  &mo 1 &mo 2 &kp LEFT &kp DOWN &kp RIGHT
 			>;
-			//		  Encoder low		none			Encoder high
 			sensor-bindings = <&inc_dec_kp Q W 	&inc_dec_kp T Y 	&inc_dec_kp T Y>;
 		};
 		
@@ -60,7 +59,6 @@
 				&kp C_PREV &none &kp C_VOL_UP &kp C_MUTE &trans &trans &trans &trans &trans &trans &kp END &kp PG_DN  &kp C_NEXT &trans &bl BL_INC
 				&bt BT_PRV &bt BT_NXT  &trans              &trans                            &trans   &trans   &trans &bootloader &trans &bl BL_DEC
 			>;
-			//		  Encoder low				none				Encoder high
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN 	&inc_dec_kp C_VOL_UP C_VOL_DN 	&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 		
