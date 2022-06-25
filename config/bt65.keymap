@@ -36,7 +36,7 @@
 			bindings = <
 
 				&kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp  N8   &kp  N9   &kp N0 &kp MINUS &kp EQUAL &kp BKSP &kp DEL
-				&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp  I    &kp  O  &kp  P   &kp LBKT &kp RBKT  	 &RGB_COLOR_HSB(1,100,100)
+				&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp  I    &kp  O  &kp  P   &kp LBKT &kp RBKT  	 &RGB_COLOR_HSB(6,6,6)
 				&kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp  K    &kp  L  &kp SEMI &kp SQT &kp NON_US_HASH 	&kp RET &trans
 				&kp LSHFT &none &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH   &kp RSHFT &kp UP &layer_two
 				&kp LCTRL &kp LGUI &kp LALT            &kp SPACE                          &kp RALT  &mo 1 &mo 2 &kp LEFT &kp DOWN &kp RIGHT
@@ -73,13 +73,12 @@
 				// |  CTL  |  WIN  |  ALT  |            SPACE               | ALT | 1    |  MENU| LEFT |  DOWN    | RIGHT	|
 				// ------------------------------------------------------------------------------------------------------------
 			bindings = <
-				&trans &RGB_COLOR_HSB(1,100,100) &RGB_COLOR_HSB(50,100,100) &RGB_COLOR_HSB(100,100,100) &RGB_COLOR_HSB(150,100,100) &RGB_COLOR_HSB(200,100,100) &RGB_COLOR_HSB(300,100,100) &trans &trans &trans &trans &trans &trans &trans &trans
+				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 				&trans &none &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 				&trans &trans &trans              &trans                            &trans &trans &trans &trans &trans &bootloader
 			>;
-			//		  Encoder low		none			Encoder high
 			sensor-bindings = <&inc_dec_kp Q W 	&inc_dec_kp E R 	&inc_dec_kp T Y>;
 		};
 
