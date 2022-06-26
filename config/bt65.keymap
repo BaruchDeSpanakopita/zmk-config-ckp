@@ -40,60 +40,60 @@
 
 		default_layer {
 				// ------------------------------------------------------------------------------------------------------------
-				// | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  | BKSP | INS | 15
-				// | ---  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   \    | DEL | 14 (kein Enter)
-				// | TAB  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |  ENTER  | PGUP | 15 (hier Enter)
-				// |  SHIFT  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  | /   |   SHIFT  | UP  | PGDN | 15 (1 dead)
-				// |  CTL  |  WIN  |  ALT  |            SPACE               | ALT | mo 1  |  MENU| LEFT | DOWN | RIGHT | 10
+				// | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  ß  |  =  |BKSP | DEL | 		15
+				// |     |  Q  |  W  |  E  |  R  |  T  |  Z  |  U  |  I  |  O  |  P  |  Ü  |  +  |RGB  | 		14 (kein Enter)
+				// | TAB |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  Ö  |  Ä  |  #  |ENTER|Lay3 | 		15 (hier Enter)
+				// |SHIFT|     |  Y  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  -  |SHIFT| UP  |Lay2 | 		15 (1 dead)
+				// | CTL | WIN | ALT |            SPACE            | ALT |mo 1 |mo 2 |LEFT |DOWN |RIGHT|		10
 				// ------------------------------------------------------------------------------------------------------------
 			bindings = <
 
-				&kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp  N8   &kp  N9   &kp N0 &kp MINUS &kp EQUAL &kp BKSP &kp DEL
-				&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp  I    &kp  O  &kp  P   &kp LBKT &kp RBKT  	 &rgb_ug RGB_COLOR_HSB(0,0,100)
-				&kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp  K    &kp  L  &kp SEMI &kp SQT &kp NON_US_HASH 	&kp RET &layer_three
-				&kp LSHFT &none &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH   &kp RSHFT &kp UP &layer_two
-				&kp LCTRL &kp LGUI &kp LALT            &kp SPACE                          &kp RALT  &mo 1 &mo 2 &kp LEFT &kp DOWN &kp RIGHT
+				&kp ESC   &kp N1   &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &kp EQUAL &kp BKSP &kp DEL
+				&kp none  &kp Q    &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LBKT  &kp RBKT  	       &rgb_ug RGB_COLOR_HSB(0,0,100)
+				&kp TAB   &kp A    &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI &kp SQT &kp NON_US_HASH    &kp RET &layer_three
+				&kp LSHFT &none    &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT &kp UP &layer_two
+				&kp LCTRL &kp LGUI &kp LALT            &kp SPACE                    &kp RALT  &mo 1 &mo 2 &kp LEFT &kp DOWN &kp RIGHT
 			>;
-			//		  Encoder low		none			Encoder high
-			sensor-bindings = <&inc_dec_kp Q W 	&inc_dec_kp T Y 	&inc_dec_kp T Y>;
+			//		  Encoder low				none			Encoder high
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN 	&inc_dec_kp X X 	&inc_dec_kp T Y>;
 		};
 		
 		raise {
 				// ------------------------------------------------------------------------------------------------------------
-				// |  `  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |BKSP | INS		|
-				// | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   \    | DEL		|
-				// | CAPS  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |PGUP	|
-				// |  SHIFT  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  | /   |   SHIFT  | UP   | PGDN|
-				// |  CTL  |  WIN  |  ALT  |            SPACE               | ALT | 1    |  MENU| LEFT |  DOWN    | RIGHT	|
+				// | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |BKSP | INS | 		15
+				// |     |  Q  |  W  |  E  |  R  |  T  |  Z  |  U  |  I  |  O  |  P  |  [  |  ]  |DEL  | 		14 (kein Enter)
+				// | TAB |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  ä  |  #  |ENTER|PGUP | 		15 (hier Enter)
+				// |SHIFT|     |  Y  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  -  |SHIFT| UP  |PGDN | 		15 (1 dead)
+				// | CTL | WIN | ALT |            SPACE            | ALT |mo 1 |MENU |LEFT |DOWN |RIGHT|		10
 				// ------------------------------------------------------------------------------------------------------------
 			bindings = <
-				&kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp  F8   &kp  F9   &kp F10  &kp F11 &kp F12 &bl BL_TOG &rgb_ug RGB_TOG
-				&trans &trans &kp UP &trans &trans &trans &trans &trans &kp INS &trans &kp PSCRN &kp SLCK &kp PAUSE_BREAK  &rgb_ug RGB_HUI
-				&trans    &kp LEFT &kp DOWN &kp RIGHT &bootloader &trans &trans &trans &trans &trans &kp HOME  &kp PG_UP &reset  &bootloader &rgb_ug RGB_HUD
-				&kp C_PREV &none &kp C_VOL_UP &kp C_MUTE &trans &trans &trans &trans &trans &trans &kp END &kp PG_DN  &kp C_NEXT &trans &bl BL_INC
-				&bt BT_PRV &bt BT_NXT  &trans              &trans                            &trans   &trans   &trans &bootloader &trans &bl BL_DEC
+				&kp ESC    &kp F1     &kp F2       &kp F3     &kp F4      &kp F5 &kp F6 &kp F7 &kp F8  &kp F9 &kp F10     &kp F11    &kp F12          &bl BL_TOG       &rgb_ug RGB_TOG
+				&trans     &trans     &kp UP       &trans     &trans      &trans &trans &trans &kp INS &trans &kp PSCRN   &kp SLCK   &kp PAUSE_BREAK  &rgb_ug RGB_HUI
+				&trans     &kp LEFT   &kp DOWN     &kp RIGHT  &bootloader &trans &trans &trans &trans  &trans &kp HOME    &kp PG_UP  &reset           &bootloader      &rgb_ug RGB_HUD
+				&kp C_PREV &none      &kp C_VOL_UP &kp C_MUTE &trans      &trans &trans &trans &trans  &trans &kp END     &kp PG_DN  &kp C_NEXT       &trans           &bl BL_INC
+				&bt BT_PRV &bt BT_NXT &trans              &trans                        &trans &trans  &trans &bootloader &trans     &bl BL_DEC
 			>;
 			//		  Encoder low				none				Encoder high
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN 	&inc_dec_kp C_VOL_UP C_VOL_DN 	&inc_dec_kp C_VOL_UP C_VOL_DN>;
+			sensor-bindings = <&inc_dec_kp Q W 	&inc_dec_kp X X 	&inc_dec_kp T Y>;
 		};
 		
 		MODIF {
 				// ------------------------------------------------------------------------------------------------------------
-				// |  `  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |BKSP | INS		|
-				// | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   \    | DEL		|
-				// | CAPS  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |PGUP	|
-				// |  SHIFT  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  | /   |   SHIFT  | UP   | PGDN|
-				// |  CTL  |  WIN  |  ALT  |            SPACE               | ALT | 1    |  MENU| LEFT |  DOWN    | RIGHT	|
+				// |trans|trans|trans|trans|  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |BKSP | INS | 		15
+				// |     |  Q  |  W  |  E  |  R  |  T  |  Z  |  U  |  I  |  O  |  P  |  [  |  ]  |DEL  | 		14 (kein Enter)
+				// | TAB |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  ä  |  #  |ENTER|PGUP | 		15 (hier Enter)
+				// |SHIFT|     |  Y  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  -  |SHIFT| UP  |PGDN | 		15 (1 dead)
+				// | CTL | WIN | ALT |            SPACE            | ALT |mo 1 |MENU |LEFT |DOWN |RIGHT|		10
 				// ------------------------------------------------------------------------------------------------------------
 			bindings = <
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-				&trans &none &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-				&trans &trans &trans              &trans                            &trans &trans &trans &trans &trans &bootloader
+				&trans &none  &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+				&trans &trans &trans               &trans                      &trans &trans &trans &trans &trans &bootloader
 			>;
 			//		  Encoder low		none			Encoder high
-			sensor-bindings = <&inc_dec_kp Q W 	&inc_dec_kp E R 	&inc_dec_kp T Y>;
+			sensor-bindings = <&inc_dec_kp Q W 	&inc_dec_kp X X 	&inc_dec_kp T Y>;
 		};
 
 	};
