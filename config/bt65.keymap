@@ -49,7 +49,7 @@
 			bindings = <
 
 				&kp ESC   &kp N1   &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &kp EQUAL &kp BKSP &kp DEL
-				&kp none  &kp Q    &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LBKT  &kp RBKT  	       &rgb_ug RGB_COLOR_HSB(0,0,100)
+				&none	  &kp Q    &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LBKT  &kp RBKT  	       &rgb_ug RGB_COLOR_HSB(0,0,100)
 				&kp TAB   &kp A    &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI &kp SQT &kp NON_US_HASH    &kp RET &layer_three
 				&kp LSHFT &none    &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT &kp UP &layer_two
 				&kp LCTRL &kp LGUI &kp LALT            &kp SPACE                    &kp RALT  &mo 1 &mo 2 &kp LEFT &kp DOWN &kp RIGHT
@@ -73,7 +73,7 @@
 				&kp C_PREV &none      &kp C_VOL_UP &kp C_MUTE &trans      &trans &trans &trans &trans  &trans &kp END     &kp PG_DN  &kp C_NEXT       &trans           &bl BL_INC
 				&bt BT_PRV &bt BT_NXT &trans              &trans                        &trans &trans  &trans &bootloader &trans     &bl BL_DEC
 			>;
-			//		  Encoder low				none				Encoder high
+			//		  Encoder low		none				Encoder high
 			sensor-bindings = <&inc_dec_kp Q W 	&inc_dec_kp X X 	&inc_dec_kp T Y>;
 		};
 		
